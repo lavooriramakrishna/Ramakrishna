@@ -1,0 +1,16 @@
+
+
+<h2 
+  (click)="togglePopup()" 
+  class="skills-heading">
+ Skills
+</h2>
+<div class="popup" *ngIf="isPopupVisible">
+<ul>
+  
+  <li *ngFor="let sk of skill"><strong>Language: </strong> {{ sk.languages }}</li>
+  <li *ngFor="let sk of skill"><strong>Tool: </strong> {{ sk.tools }}</li>
+  <li *ngFor="let sk of skill"><strong>BI: </strong> {{ sk.bi }}</li>
+  <li *ngFor="let sk of skill"><strong>Databases: </strong> {{ sk.databases }}</li>
+</ul>
+</div>

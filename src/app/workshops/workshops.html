@@ -1,0 +1,10 @@
+<h2 
+  (click)="togglePopup()" 
+  class="workshop-heading">
+  Workshops 
+</h2>
+<div class="popup" *ngIf="isPopupVisible">
+<li *ngFor="let wp of workshops">
+  {{ wp }}
+</li>
+</div>

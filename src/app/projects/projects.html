@@ -1,0 +1,11 @@
+<h2 (click)="togglePopup()" 
+  class="project-heading">
+  Projects</h2> 
+
+  <div class="popup" *ngIf="isPopupVisible">
+<div *ngFor="let pro of projects">
+  <h4>{{pro.title }}</h4>
+   <p> <strong>Description: </strong> {{ pro.description }}</p>
+     <h5>({{ pro.tech }})</h5> 
+ </div>
+  </div>

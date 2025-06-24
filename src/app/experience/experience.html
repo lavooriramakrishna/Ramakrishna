@@ -1,0 +1,19 @@
+<h2 
+  (click)="togglePopup()" 
+  
+  class="experience-heading">
+  Experience</h2> 
+  <div class="popup" *ngIf="isPopupVisible">
+<div *ngFor="let exp of experience">
+  <h3>{{ exp.company }} - ({{ exp.date }})</h3>
+  <h4>{{ exp.role }} </h4>
+  <h4>Roles & Responsibilities :</h4>
+
+    <li *ngFor="let task of exp.responsibilities">{{ task }}</li>
+</div>
+
+<div *ngFor="let fr of fresher">
+  <h4>{{fr.role }}</h4>
+  <p> {{fr.Description }}</p>
+</div>
+</div>

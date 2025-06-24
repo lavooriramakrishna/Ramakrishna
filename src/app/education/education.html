@@ -1,0 +1,25 @@
+<h2
+(click)="togglePopup()" 
+  class="education-heading">
+  Education </h2>
+
+    <div class="popup" *ngIf="isPopupVisible">
+ <table border="1" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th>Degree</th>
+      <th>Institution</th>
+      <th>Year</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let edu of education">
+      <td>{{ edu.degree }}</td>
+      <td>{{ edu.institution }}</td>
+      <td>{{ edu.year }}</td>
+      <td>{{ edu.score }}</td>
+    </tr>
+  </tbody>
+</table>
+    </div>

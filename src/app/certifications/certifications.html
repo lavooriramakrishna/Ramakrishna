@@ -1,0 +1,11 @@
+<h2
+(click)="togglePopup()" 
+  class="certifications-heading"
+>Certifications</h2> 
+
+<div class="popup" *ngIf="isPopupVisible">
+<div >
+<li *ngFor="let ctf of certifications">
+  {{ ctf }}</li>
+</div>
+</div>

@@ -1,0 +1,19 @@
+.achievements-heading {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  color: #007bff;
+}
+
+.popup {
+  background-color: #f1f1f1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  
+}

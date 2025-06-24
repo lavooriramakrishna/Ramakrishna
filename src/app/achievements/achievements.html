@@ -1,0 +1,11 @@
+<h2
+(click)="togglePopup()" 
+  class="achievements-heading">
+Achievements</h2> 
+
+<div class="popup" *ngIf="isPopupVisible">
+<li *ngFor="let ac of achievements">
+  {{ ac }}
+</li>
+
+</div>

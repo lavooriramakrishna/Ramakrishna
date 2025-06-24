@@ -1,0 +1,20 @@
+ 
+ 
+ <!-- <div [ngStyle]="{'background-image': 'url(assets/images/lukepic.jpg)'}" class="background-div"> -->
+
+<div class="background-div">
+  <!-- Your content -->
+     <h1>{{ portfolioData.hero.name }}</h1>
+<h3>{{ portfolioData.hero.location }}</h3>
+
+<p><strong>Email:</strong> {{ portfolioData.hero.contact.email }}</p>
+<p><strong>Phone:</strong> {{ portfolioData.hero.contact.phone }}</p>
+
+<p><strong>LinkedIn:</strong> <a [href]="portfolioData.hero.contact.linkedin" target="_blank">Profile</a></p>
+
+<div class="top-right-image">
+  <img src="assets/images/lukepic.jpg" alt="Luke Picture">
+</div>
+</div>
+
+
