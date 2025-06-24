@@ -80,7 +80,9 @@
               "buildTarget": "luke2:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "defaultProject": "luke2"
+
         },
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n"
@@ -102,6 +104,7 @@
         }
       }
     }
+    
   },
   "cli": {
     "analytics": "6551d47d-8ae3-4d8c-9011-0ca244213693"
