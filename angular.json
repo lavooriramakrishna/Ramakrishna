@@ -28,7 +28,25 @@
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
-              "entry": "src/server.ts"
+              "entry": "src/server.ts",
+              "projects": {
+  "luke2": {
+    
+    "architect": {
+      "build": {
+        "options": {
+          "outputPath": "dist/luke2/browser"
+        }
+      },
+      "server": {
+        "options": {
+          "outputPath": "dist/luke2/server"
+        }
+      }
+    }
+  }
+}
+
             }
           },
           "configurations": {
